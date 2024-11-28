@@ -16,27 +16,8 @@ API Endpoints:
 Endpoint: /api/v1/auth/register
 Method: POST
 Description: Allows a new user to register by providing necessary details.
-Request Body:
-{
-  "username": "akkhileshrp",
-  "password": "123456",
-  "email": "akkhileshrp@gmail.com",
-  "role": "admin"
-}
-Response:
-{
-  "message": "User registered successfully",
-  "newUser": {
-    "username": "akkhileshrp",
-    "email": "akkhileshrp@gmail.com",
-    "password": "$2a$10$y7wX9tw1yNzsZLHHP0j7KOIJj68ucm17Uh0Wpo7Cucd9XiiIxLVR2",
-    "role": "admin",
-    "_id": "6747ea1d92bfcd1a778f5fca",
-    "createdAt": "2024-11-28T03:57:17.086Z",
-    "updatedAt": "2024-11-28T03:57:17.086Z",
-    "__v": 0
-  }
-}
+![image](https://github.com/user-attachments/assets/ab6f79b9-e706-4d71-909d-42af461ac967)
+
 `Login`
 Endpoint: /api/v1/auth/login
 Method: POST
