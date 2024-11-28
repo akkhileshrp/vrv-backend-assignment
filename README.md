@@ -16,6 +16,10 @@ API Endpoints:
 Endpoint: /api/v1/auth/register
 Method: POST
 Description: Allows a new user to register by providing necessary details.
+
+
+
+
 ![image](https://github.com/user-attachments/assets/ab6f79b9-e706-4d71-909d-42af461ac967)
 
 `Login`
