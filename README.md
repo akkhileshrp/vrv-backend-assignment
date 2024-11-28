@@ -13,147 +13,88 @@ to install the necessary dependencies. Afterward, you can start the application 
 
 API Endpoints:
 `Register`
-Endpoint: /api/v1/auth/register
-Method: POST
-Description: Allows a new user to register by providing necessary details.
-Request Body:
-{
-  "username": "akkhileshrp",
-  "password": "123456",
-  "email": "akkhileshrp@gmail.com",
-  "role": "admin"
-}
-Response:
-{
-  "message": "User registered successfully",
-  "newUser": {
-    "username": "akkhileshrp",
-    "email": "akkhileshrp@gmail.com",
-    "password": "$2a$10$y7wX9tw1yNzsZLHHP0j7KOIJj68ucm17Uh0Wpo7Cucd9XiiIxLVR2",
-    "role": "admin",
-    "_id": "6747ea1d92bfcd1a778f5fca",
-    "createdAt": "2024-11-28T03:57:17.086Z",
-    "updatedAt": "2024-11-28T03:57:17.086Z",
-    "__v": 0
-  }
-}
+`Endpoint: /api/v1/auth/register`
+`Method: POST`
+`Description: Allows a new user to register by providing necessary details.`
+
+
+
+![alt text](image-1.png)
+
 `Login`
-Endpoint: /api/v1/auth/login
-Method: POST
-Description: Authenticates a user and provides an access token.
-Request Body:
-{
-  "username": "akkhileshrp",
-  "password": "123456"
-}
-Response:
-{
-  "message": "Login successful",
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
-}
+`Endpoint: /api/v1/auth/login`
+`Method: POST`
+`Description: Authenticates a user and provides an access token.`
+
+
+![alt text](image.png)
+
 `Logout`
-Endpoint: /api/v1/auth/logout
-Method: POST
-Description: Logs out the user by clearing the authentication token stored in cookies.
-Response:
-{
-  "message": "Logged out successfully"
-}
+`Endpoint: /api/v1/auth/logout`
+`Method: POST`
+`Description: Logs out the user by clearing the authentication token stored in cookies.`
+
+
+![alt text](image-2.png)
+
+
 `Token Verification`
-Endpoint: /api/v1/auth/token-verify
-Method: POST
-Description: Verifies the validity of an access token.
-Request Body:
-{
-  "token": "string"
-}
-Response:
-{
-  "isValid": true
-}
+`Endpoint: /api/v1/auth/token-verify`
+`Method: POST`
+`Description: Verifies the validity of an access token.`
+
+
+![alt text](image-3.png)
+
+
 `Role-Based Access`
-Endpoint: /api/v1/roles/manager
-Method: GET
-Description: Grants access to specific resources based on user roles.
-Response:
-{
-  "message": "Access granted",
-  "data": { ... }
-}
+`Endpoint: /api/v1/roles/manager`
+`Method: GET`
+`Description: Grants access to specific resources based on user roles.`
+
+
+![alt text](image-4.png)
+
+
 `User Profile`
-Endpoint: /api/v1/roles/user
-Method: GET
-Description: Displays the profile of the logged-in user.
-Response:
-{
-  "username": "bhuvaneshp",
-  "email": "bhuvaneshp@gmail.com",
-  "role": "user",
-  "_id": "6747ea1d92bfcd1a778f5fca"
-}
+`Endpoint: /api/v1/roles/user`
+`Method: GET`
+`Description: Displays the profile of the logged-in user.`
+
+
+![alt text](image-5.png)
+
 `Admin - View All Users`
-Endpoint: /api/v1/roles/admin
-Method: GET
-Description: Allows the admin to view details of all users, including managers and other admins.
-Response:
-{
-  "users": [
-    {
-      "username": "manager1",
-      "email": "manager1@gmail.com",
-      "role": "manager"
-    },
-    {
-      "username": "user1",
-      "email": "user1@gmail.com",
-      "role": "user"
-    }
-  ]
-}
+`Endpoint: /api/v1/roles/admin`
+`Method: GET`
+`Description: Allows the admin to view details of all users, including managers and other admins.`
+
+
+![alt text](image-6.png)
+
+
 `Admin - Create User`
-Endpoint: /api/v1/admin/add-user
-Method: POST
-Description: Allows the admin to create new users or managers.
-Request Body:
-{
-  "username": "newuser",
-  "email": "newuser@gmail.com",
-  "password": "password123",
-  "role": "user"
-}
-Response:
-{
-  "message": "User created successfully",
-  "user": {
-    "username": "newuser",
-    "email": "newuser@gmail.com",
-    "role": "user"
-  }
-}
+`Endpoint: /api/v1/admin/add-user`D
+`Method: POST`
+`Description: Allows the admin to create new users or managers.`
+
+
+![alt text](image-7.png)
+
+
 `Admin - Update User`
-Endpoint: /api/v1/roles/admin/update-user/:id
-Method: PUT
-Description: Allows the admin to update user details.
-Request Body:
-{
-  "username": "updateduser",
-  "email": "updateduser@gmail.com",
-  "role": "manager"
-}
-Response:
-{
-  "message": "User updated successfully",
-  "user": {
-    "username": "updateduser",
-    "email": "updateduser@gmail.com",
-    "role": "manager"
-  }
-}
+`Endpoint: /api/v1/roles/admin/update-user/:id`
+`Method: PUT`
+`Description: Allows the admin to update user details.`
+
+
+![alt text](image-8.png)
+
+
 `Admin - Delete User`
-Endpoint: /api/v1/roles/admin/delete-user/:id
-Method: DELETE
-Description: Allows the admin to delete a user.
-Response:
-{
-  "message": "User deleted successfully"
-}
+`Endpoint: /api/v1/roles/admin/delete-user/:id`
+`Method: DELETE`
+`Description: Allows the admin to delete a user.`
+
+
+![alt text](image-9.png)
