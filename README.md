@@ -13,21 +13,18 @@ to install the necessary dependencies. Afterward, you can start the application 
 
 API Endpoints:
 `Register`
-`Endpoint: /api/v1/auth/register`
-`Method: POST`
-`Description: Allows a new user to register by providing necessary details.`
+Endpoint: /api/v1/auth/register
+Method: POST
+Description: Allows a new user to register by providing necessary details.
 
-
-
-![alt text](image-1.png)
+![alt text](/output-images/image-1.png)
 
 `Login`
-`Endpoint: /api/v1/auth/login`
-`Method: POST`
-`Description: Authenticates a user and provides an access token.`
+Endpoint: /api/v1/auth/login
+Method: POST
+Description: Authenticates a user and provides an access token.
 
-
-![alt text](image.png)
+![alt text](/output-images/image.png)
 
 `Logout`
 `Endpoint: /api/v1/auth/logout`
@@ -35,7 +32,7 @@ API Endpoints:
 `Description: Logs out the user by clearing the authentication token stored in cookies.`
 
 
-![alt text](image-2.png)
+![alt text](/output-images/image-2.png)
 
 
 `Token Verification`
@@ -44,7 +41,7 @@ API Endpoints:
 `Description: Verifies the validity of an access token.`
 
 
-![alt text](image-3.png)
+![alt text](/output-images/image-3.png)
 
 
 `Role-Based Access`
@@ -53,7 +50,7 @@ API Endpoints:
 `Description: Grants access to specific resources based on user roles.`
 
 
-![alt text](image-4.png)
+![alt text](/output-images/image-4.png)
 
 
 `User Profile`
@@ -62,7 +59,7 @@ API Endpoints:
 `Description: Displays the profile of the logged-in user.`
 
 
-![alt text](image-5.png)
+![alt text](/output-images/image-5.png)
 
 `Admin - View All Users`
 `Endpoint: /api/v1/roles/admin`
@@ -70,7 +67,7 @@ API Endpoints:
 `Description: Allows the admin to view details of all users, including managers and other admins.`
 
 
-![alt text](image-6.png)
+![alt text](/output-images/image-6.png)
 
 
 `Admin - Create User`
@@ -79,7 +76,7 @@ API Endpoints:
 `Description: Allows the admin to create new users or managers.`
 
 
-![alt text](image-7.png)
+![alt text](/output-images/image-7.png)
 
 
 `Admin - Update User`
@@ -88,7 +85,7 @@ API Endpoints:
 `Description: Allows the admin to update user details.`
 
 
-![alt text](image-8.png)
+![alt text](/output-images/image-8.png)
 
 
 `Admin - Delete User`
@@ -97,4 +94,4 @@ API Endpoints:
 `Description: Allows the admin to delete a user.`
 
 
-![alt text](image-9.png)
+![alt text](/output-images/image-9.png)
