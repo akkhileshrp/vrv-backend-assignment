@@ -13,9 +13,9 @@ to install the necessary dependencies. Afterward, you can start the application 
 
 API Endpoints:
 `Register`
-Endpoint: /api/v1/auth/register
+`Endpoint: /api/v1/auth/register
 Method: POST
-Description: Allows a new user to register by providing necessary details.
+Description: Allows a new user to register by providing necessary details.`
 
 
 
@@ -26,16 +26,11 @@ Description: Allows a new user to register by providing necessary details.
 Endpoint: /api/v1/auth/login
 Method: POST
 Description: Authenticates a user and provides an access token.
-Request Body:
-{
-  "username": "akkhileshrp",
-  "password": "123456"
-}
-Response:
-{
-  "message": "Login successful",
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
-}
+
+
+
+![image](https://github.com/user-attachments/assets/a152a3e0-e66c-4505-991e-ece5833fc680)
+
 `Logout`
 Endpoint: /api/v1/auth/logout
 Method: POST
